@@ -1,2 +1,4 @@
 #prolog object files
 *.xwam
+
+py-xsb/*

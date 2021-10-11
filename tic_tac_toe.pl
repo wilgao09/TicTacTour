@@ -33,7 +33,7 @@ is_equiv_game(G1)(G2) :-
     construct_equiv_boards(G1, GList), !,
     in_list(GList, G2).
     
-%% given a board state, give all possible next movxxs that wont create repeat boards
+%% given a board state, give all possible next boards that wont create repeat boards
 find_all_possible_nexts(B, L) :-
     \+ winner(B, _),
     findall(M, create_next_move(B,M), LMoves),
